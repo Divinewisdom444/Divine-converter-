@@ -1,16 +1,15 @@
 {
-  "name": "Smart Currency Converter — Divine ✨",
+  "name": "Smart Currency Converter - Divine ✨",
   "short_name": "Divine Converter",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#0f2027",
   "theme_color": "#0072ff",
-
-  ""icons":[
-  {
-    "src": "icon.png",  
-    "sizes": "512x512",
-    "type": "image/png"
-  }
+  "icons":[
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  
+  ]
+}
