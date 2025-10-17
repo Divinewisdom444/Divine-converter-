@@ -397,7 +397,23 @@ if ("serviceWorker" in navigator) {
 }
 </script>
 <!-- 🌟 End of Service Worker -->
-
+<script>
+  // Register the Service Worker to enable offline capability
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      // IMPORTANT: The path here must include your repo name: /Divine-converter-/
+      navigator.serviceWorker.register('/Divine-converter-/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully with scope: ', registration.scope);
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed: ', error);
+        });
+    });
+  }
+</script>
+</body>
+</html>
 </body>
 </html>
 </body>
